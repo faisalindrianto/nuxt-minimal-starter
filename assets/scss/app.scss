@@ -1,0 +1,43 @@
+@use './ripple.scss';
+@use './transitions.scss';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+h6 { @apply text-h6 font-bold }
+h5 { @apply text-h5 font-bold }
+h4 { @apply text-h4 font-bold }
+h3 { @apply text-h3 font-bold }
+h2 { @apply text-h2 font-bold }
+h1 { @apply text-h1 font-bold }
+
+/* override scrollbar style */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(212, 68, 44, 1);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(191, 61, 40, 1);
+}
+
+body {
+  overflow-x: hidden;
+  color: rgba(51, 51, 51, 1);
+}
+
+.base-container {
+  @apply w-full max-w-[1240px] mx-auto;
+}
+
+.base-spacing {
+  @apply px-4 lg:px-[60px];
+}
